@@ -1,0 +1,268 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="saran.css">
+        <title>ALUMNI PRIDES</title>
+        <link rel="icon" href ="https://www.edarabia.com/wp-content/uploads/2013/08/university-of-madras-logo-india.jpg" type ="image/x-icon">
+    </head>
+    <body class="relative">
+        <header class="header bg-black flex justify-between items-center absolute">
+            <div class="text-white text-3xl translate-x-10 font-bold font-serif">
+                <p>ALUMNI REGISTER</p>
+            </div>
+            <div class="flex justify-center items-center text-gray-400 text-sm">
+                <p class="mx-5 border-b-4 border-black hover:border-white py-6 cursor-pointer uppercase hover:animate-ping">
+                  <a href="raghul.html" class="button"> Home</a></p>
+                <p class="mx-5 border-b-4 border-black hover:border-white py-6 cursor-pointer uppercase hover:animate-ping">
+                    About</p>
+                <p class="mx-5 border-b-4 border-black hover:border-white py-6 cursor-pointer uppercase hover:animate-ping">
+                  <a href="ganesh.html" class="button">Contact</a></p>
+                <p class="mx-5 border-b-4 border-black hover:border-white py-6 cursor-pointer uppercase hover:animate-ping">
+                  <a href="abi.html" class="button">Batch</a></p>
+            </div>
+            <div class="flex justify-center items-center text-white text-lg register_login">
+                <p class="px-5 uppercase cursor-pointer hover:font-bold hover:animate-pulse">
+                <a href="Sangee.html" class="button">LOG IN</a></P>
+                <p
+                    class="px-5 uppercase font-bold cursor-pointer hover:font-normal border-l border-white hover:animate-pulse">
+                    Register</p>
+            </div>
+        </header>    
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alumni Registration Form</title>
+	<link rel="stylesheet" href="saran.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <?php 
+      if(isset($_SESSION['status']))
+      {
+      echo $_SESSION['status'];
+      unset($_SESSION['status']);
+      }
+    ?>   
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+      <form action="saran.php" method="post">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" name="firstname">
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" name="lastname">
+       </div>  
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select name="gender">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div> 
+        <div class="inputfield">
+            <label>DOB</label>
+            <div class="customss_select">
+                <span name="dob">
+                    <select name="month">
+                       <option value="00">MONTH</option>
+                       <option value="01">January</option>
+                       <option value="02">February</option>
+                       <option value="03">March</option>
+                       <option value="04">April</option>
+                       <option value="05">May</option>
+                       <option value="06">June</option>
+                       <option value="07">July</option>
+                       <option value="08">August</option>
+                       <option value="09">September</option>
+                       <option value="10">October</option>
+                       <option value="11">November</option>
+                       <option value="12">December</option>
+                    </select> 
+               </span>
+               <span>
+                    <select name="day">
+                         <option value="00">DAY</option>
+                         <option value="01">1</option>
+                         <option value="02">2</option>
+                         <option value="03">3</option>
+                         <option value="04">4</option>
+                         <option value="05">5</option>
+                         <option value="06">6</option>
+                         <option value="07">7</option>
+                         <option value="08">8</option>
+                         <option value="09">9</option>
+                         <option value="10">10</option>
+                         <option value="11">11</option>
+                         <option value="12">12</option>
+                         <option value="13">13</option>
+                         <option value="14">14</option>
+                         <option value="15">15</option>
+                         <option value="16">16</option>
+                         <option value="17">17</option>
+                         <option value="18">18</option>
+                         <option value="19">19</option>
+                         <option value="20">20</option>
+                         <option value="21">21</option>
+                         <option value="22">22</option>
+                         <option value="23">23</option>
+                         <option value="24">24</option>
+                         <option value="25">25</option>
+                         <option value="26">26</option>
+                         <option value="27">27</option>
+                         <option value="28">28</option>
+                         <option value="29">29</option>
+                         <option value="30">30</option>
+                         <option value="31">31</option>
+                    </select>
+               </span>
+               <span>
+                    <select name="year">
+                        <option value="00">YEAR</option>
+                         <option value="2005">2005</option>
+                         <option value="2004">2004</option>
+                         <option value="2003">2003</option>
+                         <option value="2002">2002</option>
+                         <option value="2001">2001</option>
+                         <option value="2000">2000</option>
+                         <option value="1999">1999</option>
+                         <option value="1998">1998</option>
+                         <option value="1997">1997</option>
+                         <option value="1996">1996</option>
+                         <option value="1995">1995</option>
+                         <option value="1994">1994</option>
+                         <option value="1993">1993</option>
+                         <option value="1992">1992</option>
+                         <option value="1991">1991</option>
+                    </select>
+               </span>
+            </div>  
+         </div>  
+        <div class="inputfield">
+          <label>Batch</label>
+          <div class="customs_select">
+            <select name="batch">
+              <option value="">Select</option>
+              <option value="19">2019-21</option>
+              <option value="21">2020-22</option>
+              <option value="22">2021-23</option>
+            </select>
+          </div>
+        </div>  
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input" name="email">
+       </div> 
+       <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" name="phone">
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" name="address"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Designation</label>
+          <input type="text" class="input" name="designation">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" name="register" value="Register" class="btn">
+      </div>
+    </form>
+    </div>
+</div>	
+	
+</body>
+</html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link rel="stylesheet" href="saran.css" />
+  </head>
+  <body>
+    <section class="footer">
+      <div class="link-row">
+        <div class="address-column">
+          <h3>UNIVERSITY OF MADRAS
+            <br>NETWORK SYSTEM AND INFORMATION TECHNOLOGY<br></h3>
+          </h3>
+          <p>GUINDY CAMPAS , KOTTURPURAM , CHENNAI , TAMIL NADU - 600085</p>
+        </div>
+        <div class="link-column">
+          <ul>
+            <li><span>Explore</span></li>
+            <li><a href="/websites">Department Infrastructur</a></li>
+            <li><a href="/email">Benefits</a></li>
+            <li><a href="/status">History</a></li>
+          </ul>
+          <ul>
+            <li><span>Resources</span></li>
+            <li>
+              <a href="/knowledge-base" rel="noopener noreferrer"
+                >Campas Drive</a
+              >
+            </li>
+            <li>
+              <a href="/api-documentation" rel="noopener noreferrer"
+                >Enhancement</a
+              >
+            </li>
+            <li>
+              <a href="/developers" rel="noopener noreferrer">INFO Details</a>
+            </li>
+          </ul>
+          <ul>
+            <li><span>Events</span></li>
+            <li>
+              <a href="/our-story" rel="noopener noreferrer">Our Story</a>
+            </li>
+            <li><a href="/events" rel="noopener noreferrer">Association</a></li>
+            <li><a href="/careers" rel="noopener noreferrer">Links</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-row">
+        <div class="copyright-column">
+          <p>&copy; 2020-21 NSIT, Inc. All rights reserved.</p>
+        </div>
+        <div class="social-column">
+          <a href="your-instagram" target="_blank" rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a href="your-twitter" target="_blank" rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <a
+            href="your-facebook-account"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a href="your-youtube" target="_blank" rel="noopener noreferrer"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title> ALUMINI SQUAD </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="raghul.css">
+        <link rel="icon" href ="https://www.edarabia.com/wp-content/uploads/2013/08/university-of-madras-logo-india.jpg" type ="image/x-icon">
+    </head>
+
+    <body>
+        <style>
+            h2,h3,h4{
+              font-size: 40px;
+              font-family:'Montserrat',sans-serif ;
+            }
+        </style>
+        <div class ="first">
+                <br><br><br><br><br><br><br>
+         <p style="color:white"><strong>University of Madras <br>Network system and Information Technology<br></strong></p>
+            <br>
+            <center>
+            <a href="Sangee.html" class="button">Login</a>
+            <a href="saran.html" class="button">New registration</a>
+           <!-- <a href="#" class="button">News room</a>-->
+            <a href="raghul.html" class="button">Help and support</a>
+            <a href="abi.html" class="button">Batch</a>
+            </center>
+            <br>
+            <!--<div class="second"></div> -->
+            <br><br>
+        </div>  
+        <br><br>
+        <h3 style ="color:rgb(81, 81, 235);position:relative;left:50px;">Aim and Objective</h3>
+        <div class = "fourth">
+            <br>
+            <p2><li>To utilize the rich experiences of old students of the college for the benefit and progress of the present students. </li>
+
+                 <li> To maintain website, publish periodical magazines or bulletins with valuable information useful to the members and students.</li> 
+                
+               <li> To bring together all the old students and the faculty of NSIT department to share their experiences with each other.</li><br>
+               
+               <li>To create interest and motivate the alumni to participate in the progress of the Institute and make them contribute towards the enhancement of their Alma mater.</li><br>
+
+               <li>To hold and organize periodical alumni meetings in the premises of NSIT.</li><br>
+               
+               <li>To provide career development and guidance.</li><br>
+               
+               <li>To create interest and motivate the alumni to participate in the progress of the Institute and make them contribute towards the enhancement of their Alma mater.</li>
+            
+            </p2>
+        
+        </div>
+        <br><br>
+        <h4 style ="color:rgb(81, 81, 235);position:relative;left:50px;">Alumni Gallery</h4>
+        <br><br>
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="1.jpg" style="width:50%;height: 50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src= "2.jpg"style="width:50%;height: 50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src= "3.jpg" style="width:50%;height: 50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src= "4.jpg" style="width:50%;height: 50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="5.jpg"style="width:50%;height: 50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src= "6.JPG" style="width:50%;height: 50%;">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src= "1.jpg" style="width: 50px;height:50px" onclick="currentSlide(1)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="2.jpg" style="width: 50px;height:50px" onclick="currentSlide(2)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="3.jpg" style="width: 50px;height:50px" onclick="currentSlide(3)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="4.jpg" style="width: 50px;height:50px" onclick="currentSlide(4)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="5.jpg" style="width: 50px;height:50px" onclick="currentSlide(5)" >
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="6.JPG" style="width: 50px;height:50px" onclick="currentSlide(6)" >
+              </div>
+            </div>
+          </div>
+     <br><br><br><br>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+<section class="footer">
+    <div class="link-row">
+      <div class="address-column">
+        <h3>UNIVERSITY OF MADRAS
+          <br>NETWORK SYSTEM AND INFORMATION TECHNOLOGY<br></h3>
+        </h3>
+        <p1>GUINDY CAMPAS , KOTTURPURAM , CHENNAI , TAMIL NADU - 600085</p1>
+      </div>
+      <div class="link-column">
+        <ul>
+          <li><span>Explore</span></li>
+          <li><a href="/websites">Websites</a></li>
+          <li><a href="/email">Examples</a></li>
+          <li><a href="/status">Pricing</a></li>
+          <li><a href="/security">Security</a></li>
+        </ul>
+        <ul>
+          <li><span>Resources</span></li>
+          <li>
+            <a href="/knowledge-base" rel="noopener noreferrer"
+              >Knowledge Base</a
+            >
+          </li>
+          <li>
+            <a href="/api-documentation" rel="noopener noreferrer"
+              >API Documentation</a
+            >
+          </li>
+          <li>
+            <a href="/developers" rel="noopener noreferrer">Developers</a>
+          </li>
+        </ul>
+        <ul>
+          <li><span>Company</span></li>
+          <li>
+            <a href="/our-story" rel="noopener noreferrer">Our Story</a>
+          </li>
+          <li><a href="/events" rel="noopener noreferrer">Events</a></li>
+          <li><a href="/careers" rel="noopener noreferrer">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-row">
+      <div class="copyright-column">
+        <p>&copy; 2020-21 NSIT, Inc. All rights reserved.</p>
+      </div>
+      <div class="social-column">
+        <a href="your-instagram" target="_blank" rel="noopener noreferrer"
+          >Instagram</a
+        >
+        <a href="your-twitter" target="_blank" rel="noopener noreferrer"
+          >Twitter</a
+        >
+        <a
+          href="your-facebook-account"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Facebook</a
+        >
+        <a href="your-youtube" target="_blank" rel="noopener noreferrer"
+          >YouTube</a
+        >
+      </div>
+    </div>
+  </section>
+        </body>
+</html>
